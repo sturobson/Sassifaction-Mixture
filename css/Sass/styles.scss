@@ -2,7 +2,7 @@
 @import "base/_mixins.scss";
 
 // Variables
-@import "base/_variables.scss";
+@import "partials/_variables.scss";
 
 // Normalize
 @import "base/_bizarro.scss";
@@ -26,6 +26,11 @@
 
 // Print styles
 @import "base/_print.scss";
+
+// Diagnostic CSS MODE
+$diagnostics:		false;
+
+@import "base/_diagnostics.scss";
 
 // DEBUG MODE
 $debugMode:         false;

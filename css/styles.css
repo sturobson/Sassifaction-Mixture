@@ -187,20 +187,6 @@ li > ul,
 li > ol {
   margin-bottom: 0; }
 
-/*------------------------------------*\
-    $BEAUTONS.CSS
-\*------------------------------------*/
-/**
- * beautons is a beautifully simple button toolkit.
- *
- * Copyright 2013 Harry Roberts
- *
- */
-/* - BASE ----------------------------- */
-/* - SIZES ---------------------------- */
-/* - FONT SIZES ----------------------- */
-/* - FUNCTIONS ------------------------ */
-/* - STYLES --------------------------- */
 p, ul, ol {
   font-family: Georgia, serif; }
 
