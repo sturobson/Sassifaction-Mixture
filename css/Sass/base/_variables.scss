@@ -1,0 +1,94 @@
+// -------------------------------------
+//    variables
+// -------------------------------------
+
+
+// -------------------------------------
+
+// max page width - define the page width here if desktop is a max width.
+
+// document font declarations - base font size with line height declared.
+
+// media query breakpoints - generic breakpoints for media queries.
+
+// branding - brand colours based on design for use in the build.
+
+// typography - fonts for the headings and body.
+
+// links - colors and styles for anchor links.
+
+// errors - colors for error messages based around forms.
+
+// flow - widths, margins and padding for the layout
+
+// -------------------------------------
+
+
+// -- max-page-width -------------------
+
+	@mixin page-width{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+// -- document font declarations -------
+
+	$doc-font-size: 16;
+	$doc-line-height: 24;
+
+// -- media query breakpoints ----------
+
+	$tiny           :  320;
+	$smaller        :  480;
+	$small          :  600;
+	$medium         :  760;
+	$regular        :  900;
+	$large          : 1100;
+	$extra-large    : 1300;
+
+// -- branding -------------------------
+
+	$twitter-brand:  #35ccff;
+	$facebook-brand: #03539e;
+	$linkedin-brand: #217bc1;
+
+// -- colors ---------------------------
+
+	$base-color: black;
+	$comp-color: green;
+	$third-color: red;
+	$alt-1: grey;
+	$alt-2: white;
+	$white: #FFF;
+	$black: #000;
+
+// -- typography -----------------------
+
+	$body-font: Georgia, serif;
+	$header-font: $body-font;
+
+// -- links ----------------------------
+
+	$link-color: red;
+	$link-color-hover: darken($link-color, 10);
+	$link-color-visited: $link-color-hover;
+	$link-color-focus: darken($link-color-hover, 10);
+
+// -- errors & info --------------------
+
+	$error: red;
+	$warning: purple;
+	$success: green;
+	$information: wheat;
+
+// --- selection colours ---------------
+
+	$selection: $link-color;
+	$selection-text: #FFF;
+
+// -- beauticon colors -----------------
+
+	$button-color: $white;
+	$button-bg-color: $base-color;
+
+// -- flow -----------------------------

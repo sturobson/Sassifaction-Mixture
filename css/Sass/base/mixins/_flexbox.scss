@@ -1,0 +1,60 @@
+// flexbox
+
+@mixin displayflex {
+display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+display:    -moz-box;      /* OLD: Firefox (buggy) */
+display: -ms-flexbox;   /* MID: IE 10 */
+display: -webkit-flex;  /* NEW, Chrome 21+ */
+display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+}
+
+@mixin align-items($align) {
+-webkit-align-items: $align;
+   -moz-align-items: $align;
+	-ms-align-items: $align;
+	 -o-align-items: $align;
+		align-items: $align;
+}
+
+@mixin flex($flex, $width) {
+-webkit-box-flex: $flex;
+   -moz-box-flex: $flex;
+		   width: $width;
+	-webkit-flex: $flex;
+		-ms-flex: $flex;
+			flex: $flex;
+}
+
+@mixin order($order) {
+-webkit-box-ordinal-group: $order;
+   -moz-box-ordinal-group: $order;
+		   -ms-flex-order: $order;
+			-webkit-order: $order;
+					order: $order;
+}
+
+// @include flex-start(VALUE) (flex-start | flex-end | center | space-between | space-around)
+
+@mixin content-justify($justify) {
+-webkit-content-justify: $justify;
+   -moz-content-justify: $justify;
+	 -o-content-justify: $justify;
+		content-justify: $justify;
+}
+
+// @include flex-direction(VALUE) (row | row-reverse | column | column-reverse)
+
+@mixin flex-direction($direction) {
+-webkit-flex-direction: $direction;
+   -moz-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+	 -o-flex-direction: $direction;
+		flex-direction: $direction;
+}
+
+@mixin box-orient($direction) {
+  -webkit-box-orient: $direction;
+     -moz-box-orient: $direction;
+       -o-box-orient: $direction;
+          box-orient: $direction
+}

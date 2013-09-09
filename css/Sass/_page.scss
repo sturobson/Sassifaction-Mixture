@@ -1,0 +1,23 @@
+// -------------------------------------
+//   import the partials
+// -------------------------------------
+
+// Typrograhpy
+
+@import "partials/_typography.scss";
+
+// Base
+
+@import "partials/_base.scss";
+
+// Layout
+
+@import "partials/modules/_layout.scss";
+
+
+
+
+// Scratch
+// Make sure this is at the end of this import file
+
+@import "partials/modules/_scratch.scss";
