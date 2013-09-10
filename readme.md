@@ -1,4 +1,4 @@
-![Sassifaction logo](http://www.alwaystwisted.com/Sassifaction.png)
+![Sassifaction logo](http://www.alwaystwisted.com/logo.png)
 
 #Sassifaction
 
