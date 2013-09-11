@@ -1,11 +1,11 @@
 // flexbox
 
 @mixin displayflex {
-display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
-display:    -moz-box;      /* OLD: Firefox (buggy) */
-display: -ms-flexbox;   /* MID: IE 10 */
-display: -webkit-flex;  /* NEW, Chrome 21+ */
-display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+display:  -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+display:     -moz-box;   /* OLD: Firefox (buggy) */
+display:  -ms-flexbox;   /* MID: IE 10 */
+display: -webkit-flex;   /* NEW, Chrome 21+ */
+display:         flex;   /* NEW: Opera 12.1, Firefox 22+ */
 }
 
 @mixin align-items($align) {
