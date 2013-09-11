@@ -51,7 +51,9 @@
 <body class="page">
 	<div id="wrapper">
 		{% include 'header' %}
-		{% include 'body' %}
+		<main role="main">
+			{% block content %}{% endblock %}
+		</main>
 		{% include 'footer' %}
 	</div> <!-- /#wrapper -->
 
