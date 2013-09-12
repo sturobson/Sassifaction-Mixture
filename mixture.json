@@ -16,5 +16,15 @@
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
   "type": "mixture",
-  "useCompass": false
+  "useCompass": false,
+  "customTodos": [
+    {
+      "fileTypes": "scss",
+      "regex": "(?<=// TODO:).*?(?=$)"
+    },
+    {
+      "fileTypes": "scss, html, js",
+      "regex": "(?<=// BUG:).*?(?=$)"
+    }
+  ]
 }
