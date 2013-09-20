@@ -27,6 +27,12 @@
 // Print styles
 @import "base/_print.scss";
 
+// Media Queries Mode
+
+$mqs: false;
+
+@import "base/_MQs.scss";
+
 // Diagnostic CSS MODE
 $diagnostics:		false;
 
