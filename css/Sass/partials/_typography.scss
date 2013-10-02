@@ -15,6 +15,7 @@ body {
 // -- links -----------------------------
 
 a {
+	word-break: break-all;
 	&:link {
 
 	}
@@ -36,12 +37,14 @@ a {
 
 p, ul, ol {
 	font-family: $body-font;
+	word-break: break-all;
 }
 
 // -- headings -------------------------
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $header-font;
+	word-break: break-all;
 }
 
 h1, .alpha, .h1{
