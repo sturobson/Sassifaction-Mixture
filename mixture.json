@@ -8,6 +8,7 @@
       "ie 7"
     ]
   },
+//  "customRubyPath": "/Users/stuartrobson/.rvm/rubies/ruby-2.0.0-p247|/Users/stuartrobson/.rvm/gems/ruby-2.0.0-p247",
   "debug": false,
   "domain": null,
   "lintScripts": false,
