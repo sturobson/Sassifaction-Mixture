@@ -1,4 +1,13 @@
 {
+  "autoPrefixer": {
+    "active": true,
+    "browsers": [
+      "last 1 version",
+      "> 1%",
+      "ie 8",
+      "ie 7"
+    ]
+  },
   "debug": false,
   "domain": null,
   "lintScripts": false,
@@ -17,14 +26,4 @@
   "templateDirectory": "templates",
   "type": "mixture",
   "useCompass": false,
-  "customTodos": [
-    {
-      "fileTypes": "scss",
-      "regex": "(?<=// TODO:).*?(?=$)"
-    },
-    {
-      "fileTypes": "scss, html, js",
-      "regex": "(?<=// BUG:).*?(?=$)"
-    }
-  ]
 }
