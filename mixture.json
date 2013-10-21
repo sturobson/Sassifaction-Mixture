@@ -19,6 +19,14 @@
   "projectDescription": "My Slightly Bizarre Starting Point adapted to make a  Mixture Project",
   "projectName": "Sassifaction",
   "publishedId": null,
+  "sass": {
+    "outputStyle": "nested",
+    "sourceMap": true,
+    "cache": true,
+    "lineNumbers": true,
+    "debugInfo": true,
+    "globbing": true
+  },
   "serverHostname": null,
   "serverPort": null,
   "simpleModePartnerServer": null,
