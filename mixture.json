@@ -1,38 +1,23 @@
 {
-  "autoPrefixer": {
-    "active": true,
-    "browsers": [
-      "last 1 version",
-      "> 1%",
-      "ie 8",
-      "ie 7"
-    ]
-  },
-//  "customRubyPath": "/Users/stuartrobson/.rvm/rubies/ruby-2.0.0-p247|/Users/stuartrobson/.rvm/gems/ruby-2.0.0-p247",
+  "convertHtmlOutput": null,
+  "customRubyPath": null,
   "debug": false,
   "domain": null,
+  "followLeader": false,
   "lintScripts": false,
   "modelSource": null,
   "preprocessorLocations": "Sass",
   "preprocessorScriptOutput": "js",
   "preprocessorStyleOutput": "css",
-  "projectDescription": "My Slightly Bizarre Starting Point adapted to make a  Mixture Project",
-  "projectName": "Sassifaction",
+  "projectDescription": "My project description",
+  "projectName": "Sassifaction-Mixture",
   "publishedId": null,
-  "sass": {
-    "outputStyle": "nested",
-    "sourceMap": true,
-    "cache": true,
-    "lineNumbers": true,
-    "debugInfo": true,
-    "globbing": true
-  },
   "serverHostname": null,
   "serverPort": null,
   "simpleModePartnerServer": null,
   "templateDefaultLayout": "layout",
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
-  "type": "mixture",
-  "useCompass": false,
+  "type": "simple",
+  "useCompass": false
 }
