@@ -49,9 +49,10 @@
 </head>
 
 <body class="page">
+	{% include 'skipnav' %}
 	<div id="wrapper">
 		{% include 'header' %}
-		<main role="main">
+		<main id="content" role="main">
 			{% block content %}{% endblock %}
 		</main>
 		{% include 'footer' %}
