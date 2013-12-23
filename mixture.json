@@ -13,7 +13,7 @@
   "domain": null,
   "lintScripts": false,
   "modelSource": null,
-  "preprocessorLocations": "Sass",
+  "preprocessorLocations": "Sass,css,js",
   "preprocessorScriptOutput": "js",
   "preprocessorStyleOutput": "css",
   "projectDescription": "My Slightly Bizarre Starting Point adapted to make a  Mixture Project",
