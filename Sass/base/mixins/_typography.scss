@@ -6,7 +6,7 @@
 		margin-bottom: 0px + $line-height;
 		margin-bottom: 0rem + ($line-height / $doc-font-size);
 	}
-	@else {
+	@if $margin != yes {
 		font-size: 0px + $size;
 		font-size: $size / $doc-font-size +rem;
 		line-height: ceil($size / $line-height) * ($line-height / $size);

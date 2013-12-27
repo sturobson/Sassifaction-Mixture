@@ -8,24 +8,27 @@
       "ie 7"
     ]
   },
+  "convertHtmlOutput": null,
   "customRubyPath": null,
   "debug": false,
   "domain": null,
+  "followLeader": false,
+  "ignoreDir": "js",
   "lintScripts": false,
   "modelSource": null,
-  "preprocessorLocations": "Sass,css,js",
+  "preprocessorLocations": "sass,js,css",
   "preprocessorScriptOutput": "js",
   "preprocessorStyleOutput": "css",
-  "projectDescription": "My Slightly Bizarre Starting Point adapted to make a  Mixture Project",
-  "projectName": "Sassifaction",
+  "projectDescription": "A Simple starter project including the Sassifaction Mixin Library",
+  "projectName": "Sassifaction Mixture Project",
   "publishedId": null,
   "sass": {
     "outputStyle": "nested",
     "sourceMap": false,
-    "cache": true,
-    "lineNumbers": true,
-    "debugInfo": true,
-    "globbing": true
+    "cache": false,
+    "lineNumbers": false,
+    "debugInfo": false,
+    "globbing": false
   },
   "serverHostname": null,
   "serverPort": null,
@@ -33,7 +36,6 @@
   "templateDefaultLayout": "layout",
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
-  "type": "mixture",
+  "type": "simple",
   "useCompass": false
 }
-

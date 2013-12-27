@@ -1,13 +1,14 @@
-// edited to my preferred naming convention
+// Only works w/ Sass 3.3
 
-//sub-components get appended with "-" and the $name
+// // edited to my preferred naming convention
+
+// //sub-components get appended with "-" and the $name
 // @mixin s($name) {
 //   @at-root   #{&}-#{$name} {
 //     @content;
 //   }
 // }
-
-//modifiers get appended with "--" and the $name
+// //modifiers get appended with "--" and the $name
 // @mixin m($name) {
 //   @at-root   #{&}--#{$name} {
 //     @content;

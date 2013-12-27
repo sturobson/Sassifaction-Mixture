@@ -1,38 +1,38 @@
 @function colorize($color, $change: n) {
-  @if $change == n {
-    @return $color;
-  }
   @if $change == l1 {
-    @return tint($color, 10%);
+    @return tint($color, 20%);
   }
-  @if $change == l2 {
-    @return tint($color, 25%);
+  @else if $change == l2 {
+    @return tint($color, 40%);
   }
-  @if $change == l3 {
-    @return tint($color, 50%);
+  @else if $change == l3 {
+    @return tint($color, 60%);
   }
-  @if $change == l4 {
-    @return tint($color, 75%);
+  @else if $change == l4 {
+    @return tint($color, 80%);
   }
-  @if $change == d1 {
-    @return shade($color, 10%);
+  @else if $change == d1 {
+    @return tint($color, 20%);
   }
-  @if $change == d2 {
-    @return shade($color, 25%);
+  @else if $change == d2 {
+    @return tint($color, 40%);
   }
-  @if $change == d3 {
-    @return shade($color, 50%);
+  @else if $change == d3 {
+    @return tint($color, 60%);
   }
-  @if $change == d4 {
-    @return shade($color, 75%);
+  @else if $change == d4 {
+    @return tint($color, 80%);
+  }
+  @else {
+    @return ($color)
   }
 }
 
 @function trans($color, $percentage) {
- @return lighten($color, (1-$percentage)*5%);
+  @return lighten($color, (1-$percentage)*5%);
 }
 @function transd($color, $percentage) {
- @return darken($color, (1-$percentage)*5%);
+  @return darken($color, (1-$percentage)*5%);
 }
 @mixin tran($type, $color, $percentage, $shade: ligthen) {
   @if $shade == lighten {
