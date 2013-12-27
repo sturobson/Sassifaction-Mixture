@@ -36,6 +36,6 @@
   "templateDefaultLayout": "layout",
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
-  "type": "simple",
+  "type": "mixture",
   "useCompass": false
 }
