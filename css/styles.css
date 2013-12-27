@@ -1,0 +1,1138 @@
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+hgroup,
+ul,
+ol,
+dd,
+menu,
+dl,
+figure,
+pre,
+table,
+fieldset,
+legend,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  min-height: auto;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+figure > img {
+  display: block;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.chromeframe {
+  background: #ccc;
+  color: #000;
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+/*
+
+Base Styles
+===========
+
+HTML, BODY, #wrapper styles
+
+*/
+
+body {
+  min-width: 260px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/*
+
+## Colors
+
+This is for a color-swatch, requires Compass at the moment.
+
+<ul class="swatch theme-colors">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+*/
+
+.swatch {
+  clear: both;
+  float: left;
+  max-width: 640px;
+}
+
+.swatch li {
+  border: 1px solid black;
+  border-radius: 8px;
+  float: left;
+  height: 120px;
+  list-style: none;
+  margin: 0 4px 4px 0;
+  width: 120px;
+}
+
+.theme-colors li {
+  background-color: orange;
+}
+
+.theme-colors li:nth-child(2) {
+  background-color: green;
+}
+
+.theme-colors li:nth-child(3) {
+  background-color: red;
+}
+
+.theme-colors li:nth-child(4) {
+  background-color: #777777;
+}
+
+.theme-colors li:nth-child(5) {
+  background-color: #cccccc;
+}
+
+.theme-colors li:nth-child(6) {
+  clear: both;
+  background-color: white;
+}
+
+.theme-colors li:nth-child(7) {
+  background-color: black;
+}
+
+/*
+
+Grids
+=====
+
+Put Your Grid System Here
+
+*/
+
+/*
+
+Base Styles
+===========
+
+HTML, BODY, #wrapper styles
+
+*/
+
+body {
+  min-width: 260px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/*
+
+Header
+======
+
+Styles for the header element
+
+*/
+
+/*
+
+Main
+====
+
+Styles for the main element
+
+*/
+
+/*
+
+Aside
+=====
+
+Styles for the aside element
+
+*/
+
+/*
+
+Footer
+======
+
+Styles for the footer element
+
+*/
+
+/*
+
+Headings
+========
+
+    <h1>This is the primary headline</h1>
+    <h2>This is the secondary headline</h2>
+    <h3>This is the tertiary headline</h3>
+    <h4>This is the average headline</h4>
+    <h5>This is the small headline</h5>
+    <h6>This is the micro headline</h6>
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, serif;
+}
+
+/*
+
+Body Copy
+========
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula non felis fermentum tincidunt. Suspendisse sapien odio, vestibulum euismod metus at, aliquet dapibus purus. Suspendisse lacinia sit amet ante eget gravida.</p>
+
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula non felis fermentum tincidunt. Suspendisse sapien odio, vestibulum euismod metus at, aliquet dapibus purus. Suspendisse lacinia sit amet ante eget gravida.</p>
+
+*/
+
+p {
+  font-family: Georgia, serif;
+}
+
+/* --- used if wanting to style the first paragraph slightly differently --- */
+
+::-moz-selection,
+::-moz-selection {
+  background-color: orange;
+  color: white;
+}
+
+::-moz-selection,
+::selection {
+  background-color: orange;
+  color: white;
+}
+
+/*
+
+Body Copy Classes
+=================
+
+    <p class="text-muted">faded out a little</p>
+    <p class="text-primary">this really is something to look at</p>
+    <p class="text-success">winner, winner. chicken dinner!</p>
+    <p class="text-info">just a bit of info</p>
+    <p class="text-warning">be careful now, take heed</p>
+    <p class="text-danger">ooh, high voltage</p>
+
+*/
+
+.text-muted {
+  color: #f3f3f3;
+}
+
+.text-primary {
+  color: #428bca;
+}
+
+.text-success {
+  color: #5cb85c;
+}
+
+.text-info {
+  color: #5bc0de;
+}
+
+.text-warning {
+  color: #f0ad4e;
+}
+
+.text-danger {
+  color: #d9534f;
+}
+
+/*
+
+Links
+=====
+
+	<a href="">this is a link</a>
+	<a class="is-selected" href="">this link is selected</a>
+
+*/
+
+/*
+
+Blockquotes
+===========
+
+    <blockquote>
+        <p>You can put a cat in an oven, but that don't make it a biscuit.</p>
+    </blockquote>
+
+*/
+
+/*
+
+Miscellaneous Typography
+=======================
+
+	<p><strong>rendered as bold text</strong></p>
+
+	<p><em>rendered as italic text</em></p>
+
+	<p><del>rendered as deleted text</del></p>
+
+	<p><dfn>defines a definition term</dfn></p>
+
+	<p><abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text when mouseover.</abbr></p>
+	<p><acronym title="extended acronym text should show when mouse over">&lt;acronym&gt; acronym - extended text when mouseover.</acronym></p>
+
+	<address>This would be rendered the address</address>
+
+	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+
+
+*/
+
+/*
+
+Code
+====
+
+	<pre>This is a pre tag rendered</pre>
+
+	<code>This is a code tag rendered</code>
+
+	<pre><code>This is a code tag in a pre tag rendered</code></pre>
+
+*/
+
+/*
+
+Scoped Typography
+=================
+
+	<div class="prose">
+		<h1>This is the primary headline</h1>
+        <h2>This is the secondary headline</h2>
+        <h3>This is the tertiary headline</h3>
+        <h4>This is the average headline</h4>
+        <h5>This is the small headline</h5>
+        <h6>This is the micro headline</h6>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula non felis fermentum tincidunt. Suspendisse sapien odio, vestibulum euismod metus at, aliquet dapibus purus. Suspendisse lacinia sit amet ante eget gravida.</p>
+
+        <a href="">A link to something</a>
+
+        <ul>
+            <li>A list item</li>
+            <li>A list item</li>
+            <li>A list item</li>
+        </ul>
+    </div>
+
+*/
+
+.prose h1 {
+  font-family: Georgia, serif;
+}
+
+.prose h2 {
+  font-family: Georgia, serif;
+}
+
+.prose h3 {
+  font-family: Georgia, serif;
+}
+
+.prose h4 {
+  font-family: Georgia, serif;
+}
+
+.prose h5 {
+  font-family: Georgia, serif;
+}
+
+.prose h6 {
+  font-family: Georgia, serif;
+}
+
+.prose p {
+  font-family: Georgia, serif;
+}
+
+.prose a {
+  font-family: Georgia, serif;
+}
+
+.prose li {
+  font-family: Georgia, serif;
+}
+
+/*
+
+Unordered Lists
+===============
+
+    <ul>
+        <li>An unordered list item</li>
+        <li>An unordered list item</li>
+        <li>An unordered list item</li>
+        <li>An unordered list item</li>
+        <ul>
+            <li>An unordered list item</li>
+            <li>An unordered list item</li>
+            <li>An unordered list item</li>
+            <li>An unordered list item</li>
+        </ul>
+    </ul>
+
+*/
+
+/*
+
+## Ordered Lists
+```
+<ol>
+    <li>An unordered list item</li>
+    <li>An unordered list item</li>
+    <li>An unordered list item</li>
+    <li>An unordered list item</li>
+    <ol>
+        <li>An unordered list item</li>
+        <li>An unordered list item</li>
+        <li>An unordered list item</li>
+        <li>An unordered list item</li>
+    </ol>
+</ol>
+```
+*/
+
+/*
+
+## Description Lists
+
+```
+<dl>
+    <dt>Term</dt>
+    <dd>Description</dd>
+    <dt>Term</dt>
+    <dd>Description</dd>
+</dl>
+```
+
+*/
+
+/*
+
+Main Navigation
+===============
+
+    <nav class="main-nav" role="navigation">
+        <ul class="main-nav-list">
+            <li class="main-nav-item"><a class="main-nav-link" href="">A main link</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="">A main link</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="">A main link</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="">A main link</a></li>
+        </ul>
+    </nav>
+
+*/
+
+/*
+
+Pagination Navigation
+=====================
+
+<ul class="pagination">
+	<li><a href="#">&laquo;</a></li>
+	<li><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li><a href="#">&raquo;</a></li>
+</ul>
+
+*/
+
+/*
+
+Breadcrumb Navigation
+=====================
+
+<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Categories</a></li>
+	<li class="active">Animals</li>
+</ol>
+
+*/
+
+/*
+
+Alerts
+=====================
+
+<div class="alert alert-success">
+	<p><strong>Well done!</strong> You successfully read this important alert message.</p>
+</div>
+
+<div class="alert alert-info">
+	<p><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</p>
+</div>
+
+<div class="alert alert-warning">
+	<p><strong>Warning!</strong> Best check yo self, you're not looking too good.</p>
+</div>
+
+<div class="alert alert-danger">
+	<p><strong>Oh snap!</strong> Change a few things up and try submitting again.</p>
+</div>
+
+*/
+
+.alert {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  padding: 16;
+}
+
+.alert-success {
+  background-color: #5cb85c;
+}
+
+.alert-success > p {
+  color: #255625;
+}
+
+.alert-info {
+  background-color: #5bc0de;
+}
+
+.alert-info > p {
+  color: #1b6d85;
+}
+
+.alert-warning {
+  background-color: #f0ad4e;
+}
+
+.alert-warning > p {
+  color: #985f0d;
+}
+
+.alert-danger {
+  background-color: #d9534f;
+}
+
+.alert-danger > p {
+  color: #761c19;
+}
+
+/*
+
+Horizontal Rules
+=====================
+
+<hr class="rule">
+<hr class="rule rule--dotted">
+<hr class="rule rule--dashed">
+<hr class="rule rule--ornament">
+
+*/
+
+.rule {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  color: pink;
+}
+
+.rule--dotted {
+  border-bottom-style: dotted;
+}
+
+.rule--dashed {
+  border-bottom-style: dashed;
+}
+
+.rule--ornament {
+  position: relative;
+}
+
+.rule--ornament:after {
+  content: "\00A7";
+  left: 0;
+  line-height: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+
+.rule--ornament[data-ornament]:after {
+  content: attr(data-ornament);
+}
+
+/*
+
+Labels
+======
+
+<h3>Example heading <span class="label label-default">New</span></h3>
+
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+
+*/
+
+.label {
+  border-radius: 4px;
+  color: #FFF;
+  display: inline;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  padding: .2em .6em .3em;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.label-default {
+  background-color: #999999;
+}
+
+.label-primary {
+  background-color: #428bca;
+}
+
+.label-success {
+  background-color: #5cb85c;
+}
+
+.label-info {
+  background-color: #5bc0de;
+}
+
+.label-warning {
+  background-color: #f0ad4e;
+}
+
+.label-danger {
+  background-color: #d9534f;
+}
+
+/*
+
+Wells
+=====
+
+<div class="well">
+	<p>This is a well</p>
+</div>
+
+*/
+
+.well {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 16;
+}
+
+/*
+
+Tables
+======
+
+Styles for the tables
+
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th></th>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+
+*/
+
+/*
+
+Media Objects
+=============
+
+<div class="media">
+	<a class="" href="">
+		<img class="media-object" width="64" src="<!-- @path rock-hammer-1.jpg -->" alt="">
+	</a>
+	<div class="media-body">
+		<h4 class="media-heading"><!-- $title --></h4>
+		<p><!-- $example-short --></p>
+	</div><!-- media-body -->
+</div><!-- media -->
+
+*/
+
+/*
+
+Forms
+=====
+
+<form action="/">
+	<fieldset>
+		<label for="name">Name</label>
+		<input type="text" id="name" class="form-text" />
+		<p class="form-help">This is help text under the form field.</p>
+		<label for="email">Email</label>
+		<input type="email" id="email" class="form-text" />
+	</fieldset>
+	<fieldset>
+		<label for="gender">Gender</label>
+		<select id="gender">
+			<option>Male</option>
+			<option>Female</option>
+			<option>Cylon</option>
+		</select>
+	</fieldset>
+	<fieldset class="radio">
+		<label for="notifications">Notifications</label>
+		<ul>
+			<li><label><input type="radio" name="notifications" /> Send me email</label></li>
+			<li><label><input type="radio" name="notifications" /> Don't send me email</label></li>
+			<li><label><input type="radio" name="notifications" /> Send me flowers</label></li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<label for="url">URL</label>
+		<input type="url" id="url" class="form-text" placeholder="http://yourdomain.com" />
+	</fieldset>
+	<fieldset>
+		<label for="bio">Bio</label>
+		<textarea id="bio"></textarea>
+	</fieldset>
+	<fieldset class="check">
+		<label><input type="checkbox" /> I accept the terms of service and lorem ipsum.</label>
+	</fieldset>
+	<fieldset class="form-actions">
+		<button type="submit">Submit</button>
+	</fieldset>
+</form>
+
+*/
+
+/*
+
+Search Forms
+============
+
+	<form action="/" class="search">
+		<fieldset>
+			<input type="text" placeholder="Search" />
+			<button type="submit">Go!</button>
+		</fieldset>
+	</form>
+
+*/
+
+/*
+
+Modules
+=======
+
+Put your 'modules' here
+
+*/
+
+/*
+
+Widgets
+=======
+
+Put your 'widgets' here
+
+*/
+
+/*
+
+Scratch File
+============
+
+This is for code to exist before it's re-factored put in it's place
+
+*/
+
+/*
+Shame CSS
+     This is not a dumping ground. It is a staging area for hacks that are
+     intended to be fixed and resolved so as not to sully our
+     production-ready codebase. Hacks are necessary, but they are not
+     permanent, nor are they acceptable long-term. You are not done when
+     you've moved your selector and rules here.
+
+     This is not intended to be an easy fix, or a simple way out. You will
+     spend time writing out your shame, and you will make it known that
+     you indeed had to resort to a hack with your next commit
+
+     Rules:
+       1) Your documentation should be written in block comment format so
+          that your shame is publically visible in the compiled stylesheet
+          (also helpful for debugging)
+
+       2) Name yourself so we can all scorn your lack of front-end prowess
+          (or talk to you about any questions we have)
+
+       3) Name the location your code would go were it not such a horrible
+          travesty to the name of stylesheet.
+
+       4) Give the motive behind your sociopathic manipulation of CSS, what
+          areas are affected, what this solves, and most importantly...
+
+       5) How would you go about rectifying the horrible crimes you have
+          committed given more time.
+*/
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+@page {
+    margin: 0.5cm;
+}
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* endif */
