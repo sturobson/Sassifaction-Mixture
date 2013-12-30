@@ -16,7 +16,7 @@
   "ignoreDir": "js",
   "lintScripts": false,
   "modelSource": null,
-  "preprocessorLocations": "sass,js,css",
+  "preprocessorLocations": "Sass,js,css",
   "preprocessorScriptOutput": "js",
   "preprocessorStyleOutput": "css",
   "projectDescription": "A Simple starter project including the Sassifaction Mixin Library",
